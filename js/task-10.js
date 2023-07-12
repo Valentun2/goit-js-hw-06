@@ -16,21 +16,23 @@ function onClick(evt) {
   }
 }
 
-function createBoxes(amount) {
+const createBoxes = (amount) => {
+  let total = ``;
+
   for (let i = 1; i <= amount; i++) {
     const result = `<style>
-  .div${i}{ 
-  
+  .div${i}{
     width :${30 + 10 * i}px;
      height : ${30 + 10 * i}px;
       background-color:${getRandomHexColor()};
   }
   </style>
   <div class='div${i}' ></div>`;
-
-    container.insertAdjacentHTML("beforeend", result);
+    total = total + `${result}`;
   }
-}
+  return container.insertAdjacentHTML("beforeend", total);
+};
+
 function destroyBoxes(evt) {
   container.innerHTML = "";
 }
