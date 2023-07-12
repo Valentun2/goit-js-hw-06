@@ -11,8 +11,7 @@ const container = document.querySelector("#boxes");
 buttonCreate.addEventListener("click", onClick);
 buttonDestroy.addEventListener("click", destroyBoxes);
 function onClick(evt) {
-  console.log(number.value);
-  if (number.value > 100) {
+  if (number.value > 100 || number.value < 1) {
     return alert("Введіть число від 1 до 100");
   }
   createBoxes(number.value);
