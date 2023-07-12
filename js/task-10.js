@@ -32,4 +32,5 @@ const createBoxes = (amount) => {
 };
 function destroyBoxes(evt) {
   container.innerHTML = "";
+  number.value = "";
 }
