@@ -23,8 +23,8 @@ const createBoxes = (amount) => {
 
   for (let i = 1; i <= amount; i++) {
     const result = `
-  <div class='div${i}' style="width: ${30 + 10 * i}px;
-   height: ${30 + 10 * i}px; 
+  <div class='div${i}' style="width: ${20 + 10 * i}px;
+   height: ${20 + 10 * i}px; 
       background-color: ${getRandomHexColor()}"' >
       </div>`;
     total = total + `${result}`;
