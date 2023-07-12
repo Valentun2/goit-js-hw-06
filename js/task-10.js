@@ -27,7 +27,7 @@ function createBoxes(amount) {
   }
   </style>
   <div class='div${i}' ></div>`;
-    console.dir(result);
+
     container.insertAdjacentHTML("beforeend", result);
   }
 }
