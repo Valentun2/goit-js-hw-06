@@ -4,4 +4,7 @@ userName.addEventListener("input", onInput);
 
 function onInput(evt) {
   span.textContent = evt.currentTarget.value;
+  if (span.textContent === "") {
+    span.textContent = "Anonymous";
+  }
 }
